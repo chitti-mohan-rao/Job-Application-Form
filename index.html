@@ -1,0 +1,116 @@
+
+<!--Task 4: Create a Form and Validate It-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Form</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Shapes -->
+
+  <div class="background-shapes">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <main class="container">
+
+    <form class="form-box" id="jobForm">
+
+      <h1>Job Application Form</h1>
+      <p>Fill out the form below to apply for the position</p>
+      <div class="success-message" id="successMessage">
+        Application submitted successfully!
+      </div>
+
+      <div class="input-group">
+        <label for="name">Full Name</label>
+
+        <input
+          id="name"
+          type="text"
+          placeholder="Chitti Mohan Rao"
+          required
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="chitti@example.com"
+          required
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+
+        <input
+          id="phone"
+          type="tel"
+          placeholder="1234567890"
+          pattern="[0-9]{10}"
+          required
+        >
+      </div>
+
+
+      <div class="input-group">
+        <label for="resume">Upload Resume</label>
+        <input
+          type="file"
+          id="resume"
+          accept=".pdf,.doc,.docx"
+          required
+        >
+      </div>
+
+            <div class="input-group">
+        <label for="position">Role Applied For</label>
+        <input
+          type="text"
+          id="position"
+          placeholder="Full Stack Developer"
+          required
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="message">Message</label>
+
+        <textarea
+          id="message"
+          placeholder="Tell us why you're a good fit for this role"
+          required
+          maxlength="500"
+        ></textarea>
+      </div>
+
+      <button type="submit">
+        Submit Application
+      </button>
+
+      <p class="designer">
+        Designed by <span class="name">Chitti Mohan Rao</span>
+      </p>      
+    </form>
+  </main>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
